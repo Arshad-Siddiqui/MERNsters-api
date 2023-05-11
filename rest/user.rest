@@ -1,2 +1,17 @@
 get http://localhost:8080/api/users/getAllUsers
-Content-Type:application/json
+Content-Type: application/json
+
+###
+
+post http://localhost:8080/api/users/
+Content-Length: application/json
+
+{
+  "firstName": "firstName",
+  "lastName": "lastName",
+  "email": "email",
+  "password": "password",
+  "interests": ["Quidditch"],
+  "birthday": "Wed, 21 Oct 2015 18:27:50 GMT",
+  "gender": "male"
+}
